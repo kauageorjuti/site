@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Almoxarifado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Controle de Almoxarifado</h1>
+  <form id="produtoForm">
+    <input type="text" id="nome" placeholder="Nome do produto" required />
+    <input type="number" id="quantidade" placeholder="Quantidade" required />
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+
+  <form id="saidaForm">
+    <select id="produtoSelect"></select>
+    <input type="number" id="quantidadeSaida" placeholder="Qtd. saída" required />
+    <input type="text" id="motivoSaida" placeholder="Motivo da saída" required />
+    <button type="submit">Registrar Saída</button>
+  </form>
+
+  <ul id="historico"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
